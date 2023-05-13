@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "description" content = "FinalProj" />
+		<meta name = "revised" content = "mak, 22 May 2023" />
+
+		<title>CS386 Final Project</title>
+
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+
+		<script src = "helper/js/main.js"></script>
+		<link rel = "stylesheet" type = "text/css" href = "helper/css/main.css"/>
+
+		<!-- for the menu bar -->
+		<link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin = "anonymous">
+		<script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity = "sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin = "anonymous"></script>
+		<link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	</head>
+
+	<body ng-app = 'fp'>
+
+		<nav class = "navbar navbar-expand-lg navbar-dark bg-primary">
+			<div class = "container-fluid"> 
+				<a href = "#" class = "navbar-brand">CS386 Final Project</a> <!-- header -->
+				
+				<button type = "button" class = "navbar-toggler" data-bs-toggle = "collapse" data-bs-target = "#navbarCollapse">
+					<span class = "navbar-toggler-icon"></span>
+				</button>
+				<div class = "collapse navbar-collapse justify-content-between" id = "navbarCollapse"> <!-- main menu -->
+					<div class = "navbar-nav">
+						<a href = "/main.html" class = "nav-item nav-link active" target = 'page-content'>Home</a>
+						<a href = "/helper/index.html" class = "nav-item nav-link" target = 'page-content'>About the Data</a>
+						<a href = "/data-cleaning" class = "nav-item nav-link" target = 'page-content'>Data Cleaning</a>
+						<a href = "/data-visualizations" class = "nav-item nav-link" target = 'page-content'>Data Visualizations</a>
+					</div> <!-- end navbar-nav -->
+				</div> <!-- end cllapse navbar-collapse -->
+			</div> <!-- end div container fluid -->
+		</nav>
+
+		<div id = 'page-content'>
+			<!-- <h1>[a page]</h1>
+			<hr /> -->
+			<br />
+			<article id = "content">
+				<iframe name = "content-frame" src = "helper/home.html"></iframe>
+			</article>
+			<div ng-view></div>
+		</div>
+
+		<!-- <div>
+			<footer id = "footer">Footer</footer>
+		</div> -->
+	</body>
+</html>		
+	
+
+
